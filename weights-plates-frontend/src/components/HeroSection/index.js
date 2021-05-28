@@ -18,7 +18,7 @@ const HeroSection = () => {
                     Register Today, Nothing To Lose and Everything To Gain
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>Begin Today {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Begin Today {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

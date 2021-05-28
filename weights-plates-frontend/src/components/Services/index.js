@@ -21,7 +21,7 @@ const Services = () => {
                 </ServicesCard>
                 <ServicesCard>
                 <ServicesIcon src={Icon3}/>
-                <ServicesH2>Non Need For a Monthly Subscription</ServicesH2>
+                <ServicesH2>No Need For a Monthly Subscription</ServicesH2>
                 <ServicesP>We Believe That a Healthy Lifestyle Should Be Something Everyone Can Get Access To, No Fees or Credit Cards</ServicesP>
                 </ServicesCard>         
             </ServicesWrapper> 
