@@ -26,7 +26,7 @@ export async function loginService(login){
     }
 }
 
-export async function getCurrentUser(){
+export async function getCurrentUser(id){
     try{
         const jwt = localStorage.getItem('token');
         const response = await axios.get(`http://127.0.0.1:8000/user/${id}`, {headers: {Authorization: 'Token' + jwt}});
