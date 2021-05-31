@@ -1,3 +1,6 @@
+import {NavBtn, NavBtnLink} from '../Navbar/NavbarElements'
+import '../../images/jpg-1.jpg'
+
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
@@ -6,7 +9,7 @@ export const homeObjOne = {
     topLine: 'The Only Nutrition Database You Will Ever Need',
     headLine: 'Special Diets/Intolerances & Essential Supplements with Nutitional Information',
     descriptions: 'We compute the nutritional information for recipes automatically using a proprietary algorithm. With this information, you can find individual recipes or even create entire meal plans that satisfy your dietary goals.',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Get started',
     imgStart: false,
     img: require('../../images/jpg-1.jpg'),
     alt: 'Food',
@@ -42,7 +45,9 @@ export const homeObjThree = {
     topLine: 'Join Millions of Other In Their Fitness Journey',
     headLine: 'Follow The Easy Steps To Register',
     descriptions: 'Enter Your Information and Get Started Today',
-    buttonLabel: 'Start Now',
+    buttonLabel:<NavBtn>
+                    <NavBtnLink to="/register">Register</NavBtnLink>  
+                </NavBtn>,
     imgStart: false,
     img: require('../../images/jpg-3.jpg'),
     alt: 'register',

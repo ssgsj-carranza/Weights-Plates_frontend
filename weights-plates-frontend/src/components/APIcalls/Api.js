@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export async function registerService(user){
     try{
-        const response = await axios.post('https://localhost:44394/api/register', user);
+        const response = await axios.post('https://localhost:44394/api/register/', user);
         if (response.status === 201){
             console.log('You are registered');
             return response.data;
@@ -43,7 +43,7 @@ export async function getCurrentUser(id){
 }
 
 export async function getSupplements(){
-    const response = await axios.get('http://127.0.0.1:8000/supplements');
+    const response = await axios.get('http://127.0.0.1:8000/supplements/');
     console.log(response.data);
     return(response.data)
 }

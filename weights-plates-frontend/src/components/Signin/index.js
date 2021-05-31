@@ -34,7 +34,7 @@ const SignIn = () => {
                             <FormInput type='text' name='username' onChange={handleChange} value={formValues.username} required={true} placeholder='Enter username'/>
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='text' name='password' onChange={handleChange} value={formValues.password} required={true} placeholder='Enter password'/>
-                            <FormButton type='signin'>Sign in</FormButton>
+                            <FormButton type='signin' onSubmit={handleSubmit}>Sign in</FormButton>
                             <Text>Forgot password?</Text>
                         </Form>
                     </FormContent>
