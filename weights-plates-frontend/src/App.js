@@ -7,7 +7,7 @@ import Logout from './components/Logout';
 // import RegisterScreen from './components/RegisterScreen';
 // import Tracker from './components/Tracker';
 import RegisterPage from './pages/register';
-import TrackerPage from './pages/MealList';
+import TrackerPage from './pages/tracker';
 
 
 function App() {

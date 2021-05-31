@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
-import MealList from '../../pages/MealList';
+import TrackerPage from '../../pages/tracker';
+import MealList from './MealList'
 import {Container, HeroBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton} from './TrackerElements';
 import Video from '../../videos/video.mp4'
-const Tracker = () => {
+
+
+function Tracker (){
     const [mealData, setMealData] = useState(null);
     const [calories, setCalories] = useState(2000);
+    // const nutrients = mealData.nutrients;
 
     function handleChange(event){
         setCalories(event.target.value);
@@ -30,7 +34,8 @@ const Tracker = () => {
                     <FormH1>Weights and Plates</FormH1>
                     <FormLabel htmlFor='for'>Food Tracker</FormLabel>
                     <FormInput type='number' placeholder='Calories (e.g. 2000)' onChange={handleChange}/>
-                    <FormButton type='search' onClick={getMealData}>Search</FormButton>
+                    <FormButton type='search' onClick={getMealData}>Search</FormButton><br></br>
+                    {mealData && <MealList mealData={mealData} />}
                     </Form>
             </FormContent>
         </FormWrap>

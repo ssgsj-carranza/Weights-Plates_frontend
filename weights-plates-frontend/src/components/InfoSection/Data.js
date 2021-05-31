@@ -9,7 +9,9 @@ export const homeObjOne = {
     topLine: 'The Only Nutrition Database You Will Ever Need',
     headLine: 'Special Diets/Intolerances & Essential Supplements with Nutitional Information',
     descriptions: 'We compute the nutritional information for recipes automatically using a proprietary algorithm. With this information, you can find individual recipes or even create entire meal plans that satisfy your dietary goals.',
-    buttonLabel: 'Get started',
+    buttonLabel: <NavBtn>
+                    <NavBtnLink to="/signin">Get Started</NavBtnLink>  
+                </NavBtn>,
     imgStart: false,
     img: require('../../images/jpg-1.jpg'),
     alt: 'Food',
@@ -65,7 +67,9 @@ export const homeObjFour = {
     topLine: 'Begin Food Tarcking and Searching',
     headLine: 'Simple as Typing and Hitting Enter',
     descriptions: 'Simply Enter What you Wish To Know About Your Food/Meal and Get Immediate Feedback. Enter Your Cravings and Recieve Thousands of Recipes Catered To You',
-    buttonLabel: 'Food Search',
+    buttonLabel: <NavBtn>
+                    <NavBtnLink to="/supplements">Food Tracker</NavBtnLink>  
+                </NavBtn>,
     imgStart: false,
     img: require('../../images/jpg-3.jpg'),
     alt: 'tracker',
