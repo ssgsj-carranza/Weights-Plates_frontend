@@ -33,7 +33,7 @@ function Tracker (){
                 <Form action='#'>
                     <FormH1>Weights and Plates</FormH1>
                     <FormLabel htmlFor='for'>Food Tracker</FormLabel>
-                    <FormInput type='number' placeholder='Calories (e.g. 2000)' onChange={handleChange}/>
+                    <FormInput type='text' placeholder='Calories (e.g. 2000)' onChange={handleChange}/>
                     <FormButton type='search' onClick={getMealData}>Search</FormButton><br></br>
                     {mealData && <MealList mealData={mealData} />}
                     </Form>

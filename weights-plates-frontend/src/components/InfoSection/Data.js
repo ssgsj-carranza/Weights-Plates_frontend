@@ -29,7 +29,9 @@ export const homeObjTwo = {
     topLine: 'Learn About Your Essential Supplements',
     headLine: 'Detailed Description of Your Daily Supplement Needs From Their Benefits To Their Side Effects',
     descriptions: 'Dietary supplements include vitamins, minerals, herbs, botanicals, enzymes, amino acids, or other dietary ingredients.',
-    buttonLabel: 'Begin Learning',
+    buttonLabel: <NavBtn>
+                    <NavBtnLink to="/supplements">Supplement Information</NavBtnLink>  
+                </NavBtn>,
     imgStart: true,
     img: require('../../images/jpg-2.jpg'),
     alt: 'supplement',
@@ -68,7 +70,7 @@ export const homeObjFour = {
     headLine: 'Simple as Typing and Hitting Enter',
     descriptions: 'Simply Enter What you Wish To Know About Your Food/Meal and Get Immediate Feedback. Enter Your Cravings and Recieve Thousands of Recipes Catered To You',
     buttonLabel: <NavBtn>
-                    <NavBtnLink to="/supplements">Food Tracker</NavBtnLink>  
+                    <NavBtnLink to="/foodtracker">Food Tracker</NavBtnLink>  
                 </NavBtn>,
     imgStart: false,
     img: require('../../images/jpg-3.jpg'),

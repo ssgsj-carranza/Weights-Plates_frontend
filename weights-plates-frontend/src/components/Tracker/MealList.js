@@ -1,4 +1,5 @@
 import React from 'react'
+import { ServicesContainer } from '../Services/ServicesElements';
 import { FormLabel } from '../Signin/SigninElements';
 import Meal from './Meal'
 import{FormH1} from './TrackerElements';
@@ -17,6 +18,12 @@ export default function MealList({mealData}) {
                 <FormLabel>Fat: {nutrients.fat.toFixed(0)}</FormLabel>
             </ul>
             </section>
+
+            <div>
+                {mealData.supplements.map((meal) =>{
+                  return <Meal key={meal.id} meal={meal} /> 
+                })}
+            </div>
         </main>
     )
 }

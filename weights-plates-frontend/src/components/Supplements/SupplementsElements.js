@@ -116,17 +116,3 @@ export const VideoBg = styled.video`
     object-fit: cover;
     background: #232a34
 `;
-
-// export const ImageIcon = styled.img`
-//     width: 100%;
-//     margin-bottom: 1rem;
-// `;
-
-// export const ServicesArticle = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     padding: 2rem;
-//     margin: 0 1rem;
-//     max-width: 18rem;
-//     box-shadow:  0 4px 8px 2px rgba(77, 77, 77, 0.15)
-// `
