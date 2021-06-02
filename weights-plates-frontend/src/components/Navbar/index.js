@@ -40,6 +40,9 @@ const Navbar = ({toggle}) => {
                       <NavLinks to="food tracker" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Food Tracker</NavLinks>
                   </NavItem>
                   <NavItem>
+                      <NavLinks to="bmr calculator" smooth={true} duration={500} spy={true} exact='true' offset={-80}>BMR Calculator</NavLinks>
+                  </NavItem>
+                  <NavItem>
                       <NavLinks to="supplements" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Supplements</NavLinks>
                   </NavItem>
                   <NavItem>

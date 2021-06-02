@@ -79,3 +79,22 @@ export const homeObjFour = {
     primary: true,
     darkText: false
 }
+
+export const homeObjFive = {
+    id: 'bmr calculator',
+    lightBg: true,
+    lightText: false,
+    lightTextDescription: false,
+    topLine: 'Find out Your BMR',
+    headLine: 'Simply Enter Your Information To Find Out Your Exact Caloric Intake To Begin Your Journey',
+    descriptions: 'Enter Your Age, Sex, Gender, and Height To receive a Custom Model of Your Exact Calories Required To Your Lifestyle and Goals',
+    buttonLabel: <NavBtn>
+                    <NavBtnLink to="/bmrcalculator">BMR Calculator</NavBtnLink>  
+                </NavBtn>,
+    imgStart: true,
+    img: require('../../images/jpg-2.jpg'),
+    alt: 'supplement',
+    dark: false,
+    primary: false,
+    darkText: true
+}
