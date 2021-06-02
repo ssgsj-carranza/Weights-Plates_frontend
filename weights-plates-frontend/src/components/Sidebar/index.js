@@ -16,6 +16,9 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="supplements" onClick={toggle}>
                         Supplements
                     </SidebarLink>
+                    <SidebarLink to="food tracker" onClick={toggle}>
+                        Macro Tracker
+                    </SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>
                         Services
                     </SidebarLink>

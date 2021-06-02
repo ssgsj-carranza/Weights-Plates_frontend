@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {ServicesCard, ServicesContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesH2} from '../Services/ServicesElements'
+import React from 'react'
+import {ServicesCard, ServicesContainer, ServicesH1, ServicesWrapper, ServicesH2} from '../Services/ServicesElements'
 
 function Supplement({supplements}) {
 

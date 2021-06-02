@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Container, HeroBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton} from './SupplementsElements';
 import Video from '../../videos/video.mp4'
 import SupplementList from './SupplementList'
@@ -12,12 +12,12 @@ function SupplementInfo (){
             'http://127.0.0.1:8000/supplements/'
         );
         console.log(response, "getsupplementdata")
-        // const supplements = await response.json();
-        // return supplements;
+        setSupplementData(response.data)
     }
-        // getSupplementData().then((response) => response.json())
-        // .then((data) => {setSupplementData(data); console.log(data)})
-        // .catch(() => {console.log("Error")})
+    useEffect(() =>{
+        getSupplementData()
+    }, []);
+
     return (
         <Container>
         <HeroBg>
@@ -28,8 +28,8 @@ function SupplementInfo (){
             <FormContent>
                 <Form action='#'>
                     <FormH1>Weights and Plates</FormH1>
-                    <FormLabel htmlFor='for'>Supplement Information</FormLabel>
-                    <FormButton type='search' onClick={getSupplementData}>Access Library</FormButton><br></br>
+                    {/* <FormLabel htmlFor='for'>Essential Supplements</FormLabel> */}
+                    {/* <FormButton type='search' onClick={getSupplementData}>Access Library</FormButton><br></br> */}
                     {supplementData && <SupplementList supplementData={supplementData} />}
                     </Form>
             </FormContent>

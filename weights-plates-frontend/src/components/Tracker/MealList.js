@@ -20,7 +20,7 @@ export default function MealList({mealData}) {
             </section>
 
             <div>
-                {mealData.supplements.map((meal) =>{
+                {mealData.meals.map((meal) =>{
                   return <Meal key={meal.id} meal={meal} /> 
                 })}
             </div>
