@@ -11,6 +11,7 @@ class BMR extends Component {
         heightInches:'',
         activityLevel:'',
         bmr:'',
+        cal:'',
         suggestedActivity:'',
         kgLbs:'',
       };
@@ -66,7 +67,30 @@ class BMR extends Component {
                 bmrCalculator = 655 + 9.563 * weight + 1.85 * heightConverter - 4.676 * age;
             }
         }
-        this.setState({brm: bmrCalculator})
+        this.setState({brm: bmrCalculator});
+
+        let activity ='';
+        if (bmrCalculator <= 1926){
+            activity = "Little to no exercise.";
+        }else if (bmrCalculator > 1926 && bmrCalculator <= 2207){
+            activity = "Excerise 1 to 3 times a week, giving 2 days rest in between muscle groups."
+        }else if (bmrCalculator > 2207 && bmrCalculator <= 2351){
+            activity = "Excerise 4 or 5 times a week, giving 2 days rest in between muscle groups."
+        }else if (bmrCalculator > 2351 && bmrCalculator <= 2488){
+            activity = "Moderate to Intense excercise 3 to 4 times a week."
+        }else if (bmrCalculator > 2488 && bmrCalculator <= 2796){
+            activity = "Intense excercise 6 to 7 times a week."
+        }else if (bmrCalculator > 2796){
+            activity = "Very intense daily excercise or physical job"
+        }
+        this.setState({suggestedActivity: "We suggest: " + activity})
+    }
+
+    calcCalories(){
+        let calories='';
+        if(this.state.activityLevel){
+            calories=(<div>{this.state.bmr * this.state.activityLevel}</div>)
+        }
     }
     
     render(){
