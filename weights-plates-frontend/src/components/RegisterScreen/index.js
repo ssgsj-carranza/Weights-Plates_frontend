@@ -7,9 +7,11 @@ import { FormButton, FormContent, FormH1, FormInput, FormLabel, Container, FormW
 
 const RegisterScreen = () => {
     const [newUser, setNewUser] = UseForm({username:'', password:'', gender:'', email:''});
-    const registerUser = (newUser) => {
+    const registerUser = (e, newUser) => {
+        e.preventDefault();
+        console.log('regsiterUser', newUser)
         registerService(newUser);
-        //window.location= '/'
+        window.location= '/'
     }
     return (
         <>
@@ -20,17 +22,17 @@ const RegisterScreen = () => {
                 <FormWrap>
                     <Icon to='/'>Weights and Plates</Icon>
                     <FormContent>
-                        <Form>
+                        <Form onClick={(e) => registerUser(e, newUser)}>
                             <FormH1>Register Your New Account</FormH1>
                             <FormLabel htmlFor='for'>Username</FormLabel>
-                            <FormInput type='text' name='username' onChange={setNewUser} value={newUser.username}  placeholder='Enter username'/>
+                            <FormInput type='text' name='username' onChange={setNewUser} value={newUser.username} placeholder='Enter username'/>
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='password' name='password' onChange={setNewUser} value={newUser.password}  placeholder='Enter password'/>
                             <FormLabel htmlFor='for'>Email</FormLabel>
                             <FormInput type='email' name='email' onChange={setNewUser} value={newUser.email}  placeholder='Enter email'/>
                             <FormLabel htmlFor='for'>Select Gender</FormLabel>
                             <FormInput type='text' name='gender' onChange={setNewUser} value={newUser.gender}  placeholder='Enter Gender'/>
-                            <FormButton  onClick={() => registerUser(newUser)}>Register</FormButton>
+                            <FormButton  >Register</FormButton>
                             <Text>Already Have an Account?</Text>
                         </Form>
                     </FormContent>

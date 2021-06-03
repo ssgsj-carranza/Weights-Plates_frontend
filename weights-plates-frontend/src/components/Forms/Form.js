@@ -8,6 +8,7 @@ const UserForm = (callback, initialObject) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        console.log(formValues, "form values")
         callback(formValues);
     }
     return {formValues, handleChange, handleSubmit};

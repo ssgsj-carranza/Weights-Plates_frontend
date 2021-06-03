@@ -1,8 +1,9 @@
 import axios from 'axios'
 
 export async function registerService(user){
+    console.log('register serviuce', user)
     try{
-        const response = await axios.post('https://127.0.0.1:8000/api/register/', user);
+        const response = await axios.post('http://127.0.0.1:8000/api/register/', user);
         if (response.status === 201){
             console.log('You are registered');
             console.log(response.data)
