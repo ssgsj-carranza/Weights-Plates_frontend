@@ -11,6 +11,7 @@ import RegisterPage from './pages/register';
 import TrackerPage from './pages/tracker';
 import SupplementPage from './pages/supplements';
 import BmrPage from './pages/bmr';
+import NutrientPage from './pages/nutrients';
 
 
 // function App() {
@@ -59,6 +60,7 @@ class App extends Component{
                 <Route path ='/foodtracker' component={TrackerPage}/>
                 <Route path ='/supplements' component={SupplementPage}/>
                 <Route path ='/bmrcalculator' component={BmrPage}/>
+                <Route path ='/nutrientsdata' component={NutrientPage}/>
               </Switch>
             </Router>
           );

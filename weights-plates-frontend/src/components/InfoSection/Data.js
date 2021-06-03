@@ -98,3 +98,22 @@ export const homeObjFive = {
     primary: false,
     darkText: true
 }
+
+export const homeObjSix = {
+    id: 'nutrients data',
+    lightBg: false,
+    lightText: true,
+    lightTextDescription: true,
+    topLine: 'Begin Learning About the Nutrients in Your Food',
+    headLine: 'Search for Thousands of Food Items and Leanr About Their Nutrients',
+    descriptions: 'Simply Enter What you Wish To Know About Your Food/Meal and Get Immediate Feedback',
+    buttonLabel: <NavBtn>
+                    <NavBtnLink to="/nutrientsdata">Nutrients Data</NavBtnLink>  
+                </NavBtn>,
+    imgStart: false,
+    img: require('../../images/jpg-3.jpg'),
+    alt: 'data',
+    dark: true,
+    primary: true,
+    darkText: false
+}

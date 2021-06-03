@@ -17,10 +17,13 @@ const Sidebar = ({isOpen, toggle}) => {
                         Supplements
                     </SidebarLink>
                     <SidebarLink to="food tracker" onClick={toggle}>
-                        Macro Tracker
+                        Food Tracker
                     </SidebarLink>
                     <SidebarLink to="bmr calculator" onClick={toggle}>
                         BMR Calculator
+                    </SidebarLink>
+                    <SidebarLink to="nutrients data" onClick={toggle}>
+                        Nutrients Data
                     </SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>
                         Services

@@ -9,12 +9,12 @@ function Tracker (){
     const [mealData, setMealData] = useState(null);
     const [calories, setCalories] = useState(2000);
     // const nutrients = mealData.nutrients;
-
+   
     function handleChange(event){
         setCalories(event.target.value);
     }
 
-    function getMealData(){
+   function getMealData(){
         fetch(
             `https://api.spoonacular.com/mealplanner/generate?apiKey=e7d2ab60104c4c6e9967f95e3023ff0b&timeFrame=day&targetCalories=${calories}`
         )
@@ -36,7 +36,7 @@ function Tracker (){
                     <FormInput type='text' placeholder='Calories (e.g. 2000)' onChange={handleChange}/>
                     <FormButton type='search' onClick={getMealData}>Search</FormButton><br></br>
                     {mealData && <MealList mealData={mealData} />}
-                    </Form>
+                </Form>
             </FormContent>
         </FormWrap>
     </Container>  

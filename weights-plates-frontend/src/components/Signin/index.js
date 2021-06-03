@@ -9,6 +9,7 @@ const SignIn = () => {
     const {formValues, handleChange, handleSubmit} = UserForm(loginUser, {username: '', password: ''});
     async function loginUser(loginObj){
         try{
+            console.log('About to login')
             const response = await loginService(loginObj);
             localStorage.setItem('token', response.token);
             window.location = '/';
@@ -28,13 +29,13 @@ const SignIn = () => {
                 <FormWrap>
                     <Icon to='/'>Weights and Plates</Icon>
                     <FormContent>
-                        <Form action='#'>
+                        <Form onSubmit={handleSubmit}>
                             <FormH1>Sign in to Your Account</FormH1>
                             <FormLabel htmlFor='for'>Username</FormLabel>
                             <FormInput type='text' name='username' onChange={handleChange} value={formValues.username} required={true} placeholder='Enter username'/>
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='text' name='password' onChange={handleChange} value={formValues.password} required={true} placeholder='Enter password'/>
-                            <FormButton type='signin' onSubmit={handleSubmit}>Sign in</FormButton>
+                            <FormButton type='submit'>Sign in</FormButton>
                             <Text>Forgot password?</Text>
                         </Form>
                     </FormContent>

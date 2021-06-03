@@ -144,7 +144,7 @@ class BMR extends Component {
                                     value={this.state.kgLbs == "1"}
                                     
                                     onChange={this.handleKgLbsChange}
-                                    value="1"/>Imperial</FormLabel>
+                                    value="1"/>US</FormLabel>
                             <FormLabel>
                             <FormInput  type="radio"
                                     // name="weighttype"
@@ -198,7 +198,7 @@ class BMR extends Component {
                             <option value="1.725">Very Active: Intense excercise 6 to 7 days a week</option>
                             <option value="1.9">Very Intense Activity: Very intense excercise once or more a day and or physical job</option>
                         </select>
-                    <FormButton type="button" onClick={() => this.calcCalories()}>Calculate Calories</FormButton>
+                    <FormButton type="button" onClick={() => this.calcCalories()}>Calculate Calories (by lifestyle)</FormButton>
                     <div style={{color: 'white'}}>Calories: {calories}</div>
                     </Form>
                     </FormContent>

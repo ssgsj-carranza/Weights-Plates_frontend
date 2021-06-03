@@ -43,6 +43,9 @@ const Navbar = ({toggle}) => {
                       <NavLinks to="bmr calculator" smooth={true} duration={500} spy={true} exact='true' offset={-80}>BMR Calculator</NavLinks>
                   </NavItem>
                   <NavItem>
+                      <NavLinks to="nutrients data" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Nutrients Data</NavLinks>
+                  </NavItem>
+                  <NavItem>
                       <NavLinks to="supplements" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Supplements</NavLinks>
                   </NavItem>
                   <NavItem>
@@ -52,9 +55,9 @@ const Navbar = ({toggle}) => {
               <NavBtn>
                 <NavBtnLink to="/signin">Sign In</NavBtnLink>  
               </NavBtn>
-              <NavBtn>
+              {/* <NavBtn>
                 <NavBtnLink to="/register">Register</NavBtnLink>  
-              </NavBtn>
+              </NavBtn> */}
             </NavbarContainer>  
         </Nav>
         </>

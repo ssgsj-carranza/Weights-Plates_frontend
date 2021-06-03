@@ -6,10 +6,10 @@ import Video from '../../videos/video.mp4'
 import { FormButton, FormContent, FormH1, FormInput, FormLabel, Container, FormWrap, Icon, Form, Text } from './RegisterScreenElements'
 
 const RegisterScreen = () => {
-    const [newUser, setNewUser] = UseForm({Username:'', Password:'', Gender:''});
+    const [newUser, setNewUser] = UseForm({username:'', password:'', gender:'', email:''});
     const registerUser = (newUser) => {
         registerService(newUser);
-        window.location= '/'
+        //window.location= '/'
     }
     return (
         <>
@@ -20,15 +20,17 @@ const RegisterScreen = () => {
                 <FormWrap>
                     <Icon to='/'>Weights and Plates</Icon>
                     <FormContent>
-                        <Form action='#'>
+                        <Form>
                             <FormH1>Register Your New Account</FormH1>
                             <FormLabel htmlFor='for'>Username</FormLabel>
-                            <FormInput type='text' name='Username' onChange={setNewUser} value={newUser.Username}  placeholder='Enter username'/>
+                            <FormInput type='text' name='username' onChange={setNewUser} value={newUser.username}  placeholder='Enter username'/>
                             <FormLabel htmlFor='for'>Password</FormLabel>
-                            <FormInput type='text' name='Password' onChange={setNewUser} value={newUser.Password}  placeholder='Enter password'/>
+                            <FormInput type='password' name='password' onChange={setNewUser} value={newUser.password}  placeholder='Enter password'/>
+                            <FormLabel htmlFor='for'>Email</FormLabel>
+                            <FormInput type='email' name='email' onChange={setNewUser} value={newUser.email}  placeholder='Enter email'/>
                             <FormLabel htmlFor='for'>Select Gender</FormLabel>
-                            <FormInput type='text' name='Gender' onChange={setNewUser} value={newUser.Gender}  placeholder='Select Gender'/>
-                            <FormButton type='register' onClick={() => registerUser(newUser)}>Register</FormButton>
+                            <FormInput type='text' name='gender' onChange={setNewUser} value={newUser.gender}  placeholder='Enter Gender'/>
+                            <FormButton  onClick={() => registerUser(newUser)}>Register</FormButton>
                             <Text>Already Have an Account?</Text>
                         </Form>
                     </FormContent>
