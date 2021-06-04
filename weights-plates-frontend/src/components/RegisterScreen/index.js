@@ -22,7 +22,7 @@ const RegisterScreen = () => {
                 <FormWrap>
                     <Icon to='/'>Weights and Plates</Icon>
                     <FormContent>
-                        <Form onClick={(e) => registerUser(e, newUser)}>
+                        <Form onSubmit={(e) => registerUser(e, newUser)}>
                             <FormH1>Register Your New Account</FormH1>
                             <FormLabel htmlFor='for'>Username</FormLabel>
                             <FormInput type='text' name='username' onChange={setNewUser} value={newUser.username} placeholder='Enter username'/>

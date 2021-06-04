@@ -185,8 +185,8 @@ class BMR extends Component {
                                         min="0"
                                         max="100"
                                         placeholder="Enter age"/>
-                            <FormButton type="button" onClick={() => this.calcBMR()}>Calculate</FormButton>
-                            <div style={{color: 'white'}}>Calories: {BMRresult}</div>
+                            <FormButton type="button" onClick={() => this.calcBMR()}>Calculate BMR</FormButton>
+                            <div style={{color: 'white'}}>BMR (Basal Metabolic Rate): {BMRresult} Calories/day</div>
                             <div style={{color: 'white'}}>{suggestion}</div><br></br>
                 <FormLabel htmlFor='for'>Select Lifestyle</FormLabel><br></br>
                         <select value={this.state.activityLevel}
@@ -198,8 +198,12 @@ class BMR extends Component {
                             <option value="1.725">Very Active: Intense excercise 6 to 7 days a week</option>
                             <option value="1.9">Very Intense Activity: Very intense excercise once or more a day and or physical job</option>
                         </select>
-                    <FormButton type="button" onClick={() => this.calcCalories()}>Calculate Calories (by lifestyle)</FormButton>
-                    <div style={{color: 'white'}}>Calories: {calories}</div>
+                    <FormButton type="button" onClick={() => this.calcCalories()}>Calculate Calories</FormButton>
+                    <div style={{color: 'white'}}>Daily calorie needs based on activity level</div>
+                    <div style={{color: 'white'}}>Calories: {calories}</div><br></br>
+                    <div style={{color: 'white'}}>Exercise: 15-30 minutes of elevated heart rate activity.<br></br>
+                         Very Active: 45-120 minutes of elevated heart rate activity.<br></br>
+                         Very intense exercise: 2+ hours of elevated heart rate activity.</div>
                     </Form>
                     </FormContent>
                 </FormWrap>

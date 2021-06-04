@@ -5,13 +5,12 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages';
 import SigninPage from './pages/signin';
 import Logout from './components/Logout';
-// import RegisterScreen from './components/RegisterScreen';
-// import Tracker from './components/Tracker';
 import RegisterPage from './pages/register';
 import TrackerPage from './pages/tracker';
 import SupplementPage from './pages/supplements';
 import BmrPage from './pages/bmr';
 import NutrientPage from './pages/nutrients';
+
 
 
 // function App() {

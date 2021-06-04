@@ -2,15 +2,15 @@ import React, {useState, useEffect} from 'react'
 import {ServicesCard, ServicesContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesH2} from '../Services/ServicesElements'
 
 function Nutrient({nutrients}) {
-    // const [imageUrl, SetImageUrl] = useState("");
+    // const [nutrientData, setNutrientData] = useState("");
     // useEffect(() =>{
     //     fetch(
     //         `https://api.spoonacular.com/recipes/${nutrients.id}/information?apiKey=e7d2ab60104c4c6e9967f95e3023ff0b&includeNutrition=false`
     //     )
     //     .then((response) => response.json())
-    //     .then((data) => {SetImageUrl(data.image)})
+    //     .then((data) => {setNutrientData(data.nutrition.nutrients)})
     //     .catch(() => {console.log("Error")})
-    // }, [meal.id])
+    // }, [nutrients.id])
     return <ServicesContainer>
         <ServicesH1>{nutrients.name}</ServicesH1>
         <ServicesWrapper>

@@ -2,6 +2,10 @@ import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 import {animateScroll as scroll} from 'react-scroll';
+
+
+
+
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
     const changeNav = () => {
@@ -19,7 +23,7 @@ const Navbar = ({toggle}) => {
         scroll.scrollToTop();
     }
 
-    return (
+  return (
         <>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
@@ -55,9 +59,9 @@ const Navbar = ({toggle}) => {
               <NavBtn>
                 <NavBtnLink to="/signin">Sign In</NavBtnLink>  
               </NavBtn>
-              {/* <NavBtn>
-                <NavBtnLink to="/register">Register</NavBtnLink>  
-              </NavBtn> */}
+              <NavBtn>
+                <NavBtnLink to="/logout">Logout</NavBtnLink>  
+              </NavBtn>
             </NavbarContainer>  
         </Nav>
         </>

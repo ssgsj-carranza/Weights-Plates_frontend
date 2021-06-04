@@ -83,7 +83,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
     padding: 8px 8px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
 `;
@@ -114,5 +114,5 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #232a34
+    background: #232a34;
 `;
