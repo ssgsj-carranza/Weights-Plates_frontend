@@ -1,9 +1,10 @@
 import React from 'react'
-import Nutrients from '../components/Nutrients/';
+import NutrientInfo from '../components/Nutrients/';
+
 const NutrientPage = () => {
     return (
         <>
-          <Nutrients/>  
+          <NutrientInfo/>  
         </>
     )
 }

@@ -1,4 +1,4 @@
-import {NavBtn, NavBtnLink} from '../Navbar/NavbarElements'
+import {NavBtn, NavBtnLink} from './InfoElements'
 import '../../images/jpg-1.jpg'
 
 export const homeObjOne = {
@@ -13,7 +13,7 @@ export const homeObjOne = {
                     <NavBtnLink to="/signin">Get Started</NavBtnLink>  
                 </NavBtn>,
     imgStart: false,
-    img: require('../../images/jpg-1.jpg'),
+    img: 'https://images.unsplash.com/photo-1428259067396-2d6bd3827878?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80',
     alt: 'Food',
     dark: true,
     primary: true,
@@ -33,7 +33,7 @@ export const homeObjTwo = {
                     <NavBtnLink to="/supplements">Supplement Information</NavBtnLink>  
                 </NavBtn>,
     imgStart: true,
-    img: require('../../images/jpg-2.jpg'),
+    img: 'https://images.unsplash.com/photo-1592323818181-f9b967ff537c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80',
     alt: 'supplement',
     dark: false,
     primary: false,
@@ -53,7 +53,7 @@ export const homeObjThree = {
                     <NavBtnLink to="/register">Register</NavBtnLink>  
                 </NavBtn>,
     imgStart: false,
-    img: require('../../images/jpg-3.jpg'),
+    img: 'https://images.unsplash.com/photo-1579722820308-d74e571900a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
     alt: 'register',
     dark: false,
     primary: false,
@@ -73,7 +73,7 @@ export const homeObjFour = {
                     <NavBtnLink to="/foodtracker">Food Tracker</NavBtnLink>  
                 </NavBtn>,
     imgStart: false,
-    img: require('../../images/jpg-3.jpg'),
+    img: 'https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG51dHJpdGlvbiUyMGZhY3RzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     alt: 'tracker',
     dark: true,
     primary: true,
@@ -92,7 +92,7 @@ export const homeObjFive = {
                     <NavBtnLink to="/bmrcalculator">BMR Calculator</NavBtnLink>  
                 </NavBtn>,
     imgStart: true,
-    img: require('../../images/jpg-2.jpg'),
+    img: 'https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
     alt: 'supplement',
     dark: false,
     primary: false,
@@ -105,13 +105,13 @@ export const homeObjSix = {
     lightText: true,
     lightTextDescription: true,
     topLine: 'Begin Learning About the Nutrients in Your Food',
-    headLine: 'Search for Thousands of Food Items and Leanr About Their Nutrients',
+    headLine: 'Search for Thousands of Food Items and Learn About Their Nutrients',
     descriptions: 'Simply Enter What you Wish To Know About Your Food/Meal and Get Immediate Feedback',
     buttonLabel: <NavBtn>
                     <NavBtnLink to="/nutrientsdata">Nutrients Data</NavBtnLink>  
                 </NavBtn>,
     imgStart: false,
-    img: require('../../images/jpg-3.jpg'),
+    img: 'https://images.unsplash.com/photo-1615361200141-f45040f367be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
     alt: 'data',
     dark: true,
     primary: true,
