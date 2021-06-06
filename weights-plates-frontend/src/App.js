@@ -33,13 +33,15 @@ class App extends Component{
     constructor(props){
         super(props);
         this.state={
-        supplements:[]
-        }
+        supplements:[],
+       }
     }
+    
     componentDidMount(){
         this.getSupplements()
         console.log(this.state.supplements)
     }
+    
     async getSupplements(){
         let response = await axios.get('http://127.0.0.1:8000/supplements/');
         console.log('get supplements', response.data);
@@ -48,7 +50,8 @@ class App extends Component{
         })
         console.log("supplements", response.data)
     }
-    render(){
+
+   render(){
       return (
             <Router>
               <Switch>
