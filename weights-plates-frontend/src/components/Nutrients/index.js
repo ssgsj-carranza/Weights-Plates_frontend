@@ -108,10 +108,11 @@ class NutrientInfo extends Component {
         return (
             <div>
                 <SearchBar handleChange={this.handleSearchChange} mapNutrients={() => this.mapNutrients()} />
-                {/* <NutrientList  mapNutrients={() => this.mapNutrients()}/> */}
+                {/* <NutrientList mapNutrients={() => this.mapNutrients()} /> */}
             </div>
         )
     }
 }
 
 export default NutrientInfo
+
